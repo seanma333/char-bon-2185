@@ -50,10 +50,10 @@
 		"description": "<p>you can increase one ability score of your choice by 2, or two ability scores by 1.</p>",
 		"ability_score_increase": [{"ability": "choice", "increase": 1}, {"ability": "choice", "increase": 1}]	
 	}, {
-		"name": "Extra Attck",
+		"name": "Extra Attack",
 		"level": 5,
 		"type": "passive",
-		"description": "<p>At 2nd level, you gain an uncanny sense of nearby threats. You have advantage on Reflex saving throws against effects that you can see, such as traps and explosions. To gain this benefit, you cannot be blinded, deafened, or incapacitated.</p>"
+		"description": "<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>"
 	}, {
 		"name": "Character Improvement",
 		"level": 6,

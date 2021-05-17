@@ -24,22 +24,10 @@
 		"stealth"],
 	"class_features": [
 		{
-			"name": "Cunning Action: Dash",
+			"name": "Cunning Action",
 			"type": "bonus_action",
 			"level": 1,
-			"description": "You can take a bonus action on each of your turns to Dash."
-		},
-		{
-			"name": "Cunning Action: Disengage",
-			"type": "bonus_action",
-			"level": 1,
-			"description": "You can take a bonus action on each of your turns to Disengage."
-		},
-		{
-			"name": "Cunning Action: Hide",
-			"type": "bonus_action",
-			"level": 1,
-			"description": "You can take a bonus action on each of your turns to Hide."
+			"description": "<p>You can take a bonus action on each of your turns to Dash, Disengage, or Hide.</p>"
 		},
 		{
 			"name": "Sneak Attack",
@@ -55,7 +43,8 @@
 			"name": "Expertise",
 			"type": "expertise",
 			"level": 2,
-			"description": "<p>Choose two of your skill proficiencies, or one of your skill proficiencies and one of your tools proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>"
+			"description": "<p>Choose two of your skill proficiencies, or one of your skill proficiencies and one of your tools proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>",,
+			"num_skills": 2
 		},
 		{
 			"name": "Character Improvement",
@@ -81,7 +70,8 @@
 			"name": "Expertise",
 			"type": "expertise",
 			"level": 7,
-			"description": "<p>Choose two of your skill proficiencies, or one of your skill proficiencies and one of your tools proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>"
+			"description": "<p>Choose two of your skill proficiencies, or one of your skill proficiencies and one of your tools proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>",
+			"num_skills": 2
 		},
 		{
 			"name": "Character Improvement",

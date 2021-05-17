@@ -22,6 +22,7 @@
 			"dependent_on": "level",
 			"num_uses": [3,4,4,5,5,6,6,7,7,10]
 		},
+		"ability": "technology",
 		"description": "<p>Starting at 1st level, you are able to perform exploits using available botnets. These exploits are a special kind of hack that you can perform to gain some kind of advantage over your enemies or environment.</p> <p>As you grow in knowledge, you are able to control more botnets at any one time, as represented by your ‘botnets useable’ column. Once you have used a botnet to carry out an exploit, the devices on that botnet are burned out, and you must use a long rest to create more botnets to replace the ones you lose.</p> <p>Some exploits require a saving throw from those affected. The saving throw for your exploits is 8 + your Proficiency bonus + your Tec modifier.</p>"
 	}, {
 		"name": "Healing",
@@ -43,7 +44,7 @@
 		"name": "Character Improvement",
 		"level": 4,
 		"type": "asi",
-		"description": "<p>you can increase one ability score of your choice by 2, or two ability scores by 1.</p>",
+		"description": "<p>You can increase one ability score of your choice by 2, or two ability scores by 1.</p>",
 		"ability_score_increase": [{"ability": "choice", "increase": 1}, {"ability": "choice", "increase": 1}]	
 	}, {
 		"name": "Exploit Upgrade",
@@ -53,8 +54,9 @@
 	}, {
 		"name": "Universal Training",
 		"level": 6,
-		"type": "jack_of_all_trades",
-		"description": "<p>You can add half your Proficiency bonus, rounded down, to any ability check you make that doesn’t already include your Proficiency bonus.</p>"
+		"type": "half_skill_proficiency",
+		"description": "<p>You can add half your Proficiency bonus, rounded down, to any ability check you make that doesn’t already include your Proficiency bonus.</p>",
+		"all_skills": true
 	}, {
 		"name": "Rapid Reset",
 		"type": "passive",
@@ -69,7 +71,8 @@
 		"name": "Exploit Mastery",
 		"level": 9,
 		"type": "expert_exploits",
-		"description": "<p>you are a master of exploits and gain access to expert exploits. You may now consider expert exploits as options when learning new exploits.</p>"
+		"description": "<p>You are a master of exploits and gain access to expert exploits. You may now consider expert exploits as options when learning new exploits.</p>",
+		"access_to_all": true
 	}],
 	"subclasses": {
 		"name": "Specialty",
