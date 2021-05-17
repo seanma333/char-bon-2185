@@ -12,7 +12,7 @@
 	"feature_descriptions": [{
 		"Bioenhanced": "You have advantage on checks made to avoid disease",
 		"Recharge": "Instead of regular sleep, your enhancements allow you to sleep for just 4 hours a day and still gain the benefits of an 8 hour rest. Your AI produces the illusion of dreams for you in this state, usually of robot sheep.",
-		"Composite Weaving": "Your skin and muscles are interwoven with high strength composite materials, granding you a natural armor of 13+your Dexterity modifier. Even when wearing armor your AC cannot be any lower than that of your natural armor.",
+		"Composite Weaving": "Your skin and muscles are interwoven with high strength composite materials, granding you a natural armor of 13+your Dexterity modifier. Even when wearing armor your AC cannot be any lower than that of your natural armor."
 	}],
 	"base_armor": 13,
 	"languages": ["english", "choice"],
