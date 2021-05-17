@@ -52,7 +52,7 @@
 			"name": "Character Improvement",
 			"level": 8,
 			"type": "asi",
-			"description": "<p>you can increase one ability score of your choice by 2, or two ability scores by 1.</p>",
+			"description": "<p>You can increase one ability score of your choice by 2, or two ability scores by 1.</p>",
 			"ability_score_increase": [{"ability": "choice", "increase": 1}, {"ability": "choice", "increase": 1}]
 		},
 		{
@@ -63,7 +63,8 @@
 				"determined_by": "none",
 				"num_uses": 1,
 				"recharge": "long_rest"
-			}
+			},
+			"description": "<p>You are a juggernaut on the battlefield stopping at nothing to obtain victory. Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.</p>"
 		}
 	],
 	"subclasses": {
