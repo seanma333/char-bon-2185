@@ -79,7 +79,7 @@
 			"type": "asi",
 			"description": "<p>You can increase one ability score of your choice by 2, or two ability scores by 1.</p>",
 			"ability_score_increase": [{"ability": "choice", "increase": 1}, {"ability": "choice", "increase": 1}]
-		},
+		}
 	],
 	"subclasses": {
 		"name": "Investigative Archetype",

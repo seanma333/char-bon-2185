@@ -43,7 +43,7 @@
 			"name": "Expertise",
 			"type": "expertise",
 			"level": 2,
-			"description": "<p>Choose two of your skill proficiencies, or one of your skill proficiencies and one of your tools proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>",,
+			"description": "<p>Choose two of your skill proficiencies, or one of your skill proficiencies and one of your tools proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>",
 			"num_skills": 2
 		},
 		{

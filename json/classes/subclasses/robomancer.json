@@ -7,7 +7,7 @@
 			"type": "skill_proficiency",
 			"description": "<p>You gain proficiency with the Robotics and Mechanics skills.</p>",
 			"skill_proficiencies": ["robotics", "mechanics"]
-		}
+		},
 		{
 			"name": "Robotic Companion",
 			"level": 3,

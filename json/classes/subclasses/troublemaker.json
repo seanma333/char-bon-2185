@@ -1,6 +1,6 @@
 {
 	"name": "Troublemaker",
-	"class_proficiencies": [
+	"class_features": [
 		{
 			"name": "Bonus Proficiencies: Armor",
 			"type": "armor_proficiency",
