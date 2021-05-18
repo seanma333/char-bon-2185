@@ -17,7 +17,7 @@
 				"middle": 30,
 				"old": 60,
 				"ancient": 70
-			},
+			}
 		},
 		{
 			"name": "Speed",
@@ -53,7 +53,7 @@
 			"description": "<p>Wormers are the descendants of the fittest of the fit, and the strongest of the strong. Your upper limits are doubled when determining your carrying capacity and the weight you can push, drag, or lift</p>",
 			"types": ["carrying_capacity_multiplier"],
 			"multiplier": 2
-		}
+		},
 		{
 			"name": "Languages",
 			"description": "<p>You can speak, read, and write Offworld Creole, English, and two other languages of your choice.</p>",

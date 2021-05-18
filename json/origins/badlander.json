@@ -23,7 +23,7 @@
 			"name": "Speed",
 			"description": "<p>Neither particularly fast, nor slow, your standard movement speed is 30ft.</p>",
 			"types": ["base_speed"],
-			"speed": 30,
+			"speed": 30
 		},
 		{
 			"name": "Always Ready",

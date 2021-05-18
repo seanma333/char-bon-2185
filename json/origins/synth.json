@@ -23,7 +23,7 @@
 			"name": "Speed",
 			"description": "<p>Your movement speed is 30ft.</p>",
 			"types": ["base_speed"],
-			"speed": 30,
+			"speed": 30
 		},
 		{
 			"name": "Bioenhanced",
@@ -39,7 +39,7 @@
 			"name": "Composite Weaving",
 			"description": "<p>Your skin and muscles are interwoven with high strength composite materials, granding you a natural armor of 13+your Dexterity modifier. Even when wearing armor your AC cannot be any lower than that of your natural armor.</p>",
 			"types": ["natural_armor"],
-			"natural_base_ac": 13,
+			"natural_base_ac": 13
 		},
 		{
 			"name": "Languages",
