@@ -1,33 +1,63 @@
 {
 	"name": "Korporate Kid",
 	"description": "<p>Korporate Kids are orphans raised in one of the corporate orphanages. The orphanages are in fact for-profit businesses, and the children within perform hours of work daily in exchange for shelter.</p> <p>These megacorporations use brainwashing and social manipulation techniques to ensure brand loyalty from those they raise.</p> <p>This brainwashing is incredibly effective, and many Korporate Kids feel that they owe their lives to the corporations and will willingly work with them for the rest of their lives.</p> <p>Occasionally there are rebels who break the mental programming and see their corporation for what it really is.</p> <p>Korporate Kids have been raised and directed from a very young age to fill the specific roles picked for them by their handlers. You may choose which role your handler assigned to you, or work with your GM to decide.</p>",
-	"ability_score_increases": [{"ability": "intelligence", "increase": 2}, {"ability": "technology", "increase": 1}],
-	"age": {
-		"base": 18,
-		"middle": 40,
-		"old": 80,
-		"ancient": 90
-	},
-	"speed": 30,
-	"languages": ["english", "choice", "choice"],
+	"features": [
+		{
+			"name": "Ability Score Increase",
+			"description": "<p>You were well educated by the corporations. A smarter worker is a more profitable worker. Your Intelligence score increases by 2 and your Technology score increases by 1.</p>",
+			"types": ["asi"],
+			"ability_score_increase": [{"ability": "intelligence", "increase": 2}, {"ability": "technology", "increase": 1}] 
+		},
+		{
+			"name": "Age",
+			"description": "<p>Raised on corporation rations and with access to basic medicine and healthcare means that a Korporate Kid can expect to live to 110.</p>",
+			"types": ["age"],
+			"age": {
+				"base": 18,
+				"middle": 40,
+				"old": 80,
+				"ancient": 90
+			},
+		},
+		{
+			"name": "Speed",
+			"description": "<p>Due to many years running away from law enforcement and running towards trouble, you’re slightly quicker on your feet than most people. Your base walking speed is 35 ft.</p>",
+			"types": ["base_speed"],
+			"speed": 30
+		},
+		{
+			"name": "Languages",
+			"description": "<p>You can speak, read, and write English, and two other languages of your choice.</p>",
+			"types": ["language_proficiency"],
+			"languages": ["english", "choice", "choice"]
+		}
+	],
 	"suborigins": [
 		{
 			"name": "High Flyer",
 			"description": "<p>These are the children who performed the best, seeking approval and validation from their corporation handlers. Their positive performance has been rewarded.</p>",
-			"augmentations": {
-				"tier1": ["choice"]
-			},
-			"feature_descriptions": {
-				"Augmented": "You have a Tier 1 Augmentation that was given to you to aid in your job. You may pick a Tier 1 Augmentation of your choice, related to the role you were given by your handler."
-			}
+			"features": [
+				{
+					"name": "Augmented",
+					"description": "<p>You have a Tier 1 Augmentation that was given to you to aid in your job. You may pick a Tier 1 Augmentation of your choice, related to the role you were given by your handler.</p>",
+					"type": "augment",
+					"augmentations": {
+						"tier1": ["choice"]
+					}
+				}
+			]
 		},
 		{
 			"name": "Sleeker",
-			"description": "<p>These are the children who performed the best, seeking approval and validation from their corporation handlers. Their positive performance has been rewarded.</p>",
-			"bonus_actions": [{"name": "hide"}, {"name": "disengage"}],
-			"feature_descriptions": {
-				"Avoidance": "You may take either the Hide or Disengage action as a bonus action on your turn."
-			}
+			"description": "<p>The majority of children decide to try and avoid confrontation, and you were one of them. You’ve learned how to stay out of sight and how to run away when you have to.</p>",
+			"features": [
+				{
+					"name": "Avoidance",
+					"description": "<p>You may take either the Hide or Disengage action as a bonus action on your turn.</p>",
+					"types": ["bonus_action"],
+					"values": ["Hide", "Disengage"]
+				}
+			]
 		}
 	]
 }

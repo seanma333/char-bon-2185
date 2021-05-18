@@ -12,7 +12,47 @@
 	"skill_proficiencies": [{"skill": "choice", "expertise": false}, {"skill": "choice", "expertise": false}],
 	"tool_proficiencies": [{"tool": "choice", "expertise": false}],
 	"languages": ["english", "choice"],
-	"feature_descriptions": {
-		"Varied": "You may pick proficiency in two skills of your choice."
-	}
+	"features": [
+		{
+			"name": "Ability Score Increase",
+			"description": "<p>Your People score increases by 2, plus two other ability scores of your choice increase by 1</p>",
+			"types": ["asi"],
+			"ability_score_increase": [{"ability": "people", "increase": 2}, {"ability": "choice", "increase": 1}, {"ability": "choice", "increase": 1}] 
+		},
+		{
+			"name": "Age",
+			"description": "<p>Regular joes are normal people in an abnormal world. They live the longest, and healthiest lives, reaching middle age at 45 and dying between 100 and 110 years old.</p>",
+			"types": ["age"],
+			"age": {
+				"base": 18,
+				"middle": 45,
+				"old": 80,
+				"ancient": 90
+			},
+		},
+		{
+			"name": "Speed",
+			"description": "<p>Due to many years running away from law enforcement and running towards trouble, you’re slightly quicker on your feet than most people. Your base walking speed is 35 ft.</p>",
+			"types": ["base_speed"],
+			"speed": 35
+		},
+		{
+			"name": "Varied",
+			"description": "<p>You may pick proficiency in two skills of your choice.</p>",
+			"types": ["skill_proficiency"],
+			"skill_proficiencies": ["choice", "choice"]
+		},
+		{
+			"name": "Tool Proficiency",
+			"description": "<p>You may pick one tool of your choice to become proficient in.</p>",
+			"types": ["tool_proficiency"],
+			"tool_proficiencies": ["choice"]
+		},
+		{
+			"name": "Languages",
+			"description": "<p>You can speak, read, and write English, and one other language of your choice.</p>",
+			"types": ["language_proficiency"],
+			"languages": ["english", "choice"]
+		}
+	]
 }

@@ -1,49 +1,112 @@
 {
 	"name": "Synth",
 	"description": "<p>You were manufactured by one of the large robotics corporations using a combination of biological and robotic components. Then they added advanced AI inside a robotic brain. You are physically indistinguishable from a real human aside from identical bar codes under each eyelid.</p> <p>Synths were first created off-world in 2130. Those created from this first batch are very rare and are the oldest known of their kind at 55 years old.</p>",
-	"ability_score_increases": [{"ability": "constitution", "increase": 2}],
-	"speed": 30,
-	"age": {
-		"base": 0,
-		"middle": 16,
-		"old": 45,
-		"ancient": 55
-	},
-	"feature_descriptions": [{
-		"Bioenhanced": "You have advantage on checks made to avoid disease",
-		"Recharge": "Instead of regular sleep, your enhancements allow you to sleep for just 4 hours a day and still gain the benefits of an 8 hour rest. Your AI produces the illusion of dreams for you in this state, usually of robot sheep.",
-		"Composite Weaving": "Your skin and muscles are interwoven with high strength composite materials, granding you a natural armor of 13+your Dexterity modifier. Even when wearing armor your AC cannot be any lower than that of your natural armor."
-	}],
-	"base_armor": 13,
-	"languages": ["english", "choice"],
+	"features": [
+		{
+			"name": "Ability Score Increase",
+			"description": "<p>You aren’t human. In many respects you are better than human. Your Constitution score increases by 2.</p>",
+			"types": ["asi"],
+			"ability_score_increase": [{"ability": "constitution", "increase": 2}] 
+		},
+		{
+			"name": "Age",
+			"description": "<p>Synths are fully functioning adults at creation and appear to be in their early twenties. They age at a much slower rate than humans, but have a shortened lifespan. Even the most ancient synths tend to only look around 35 years old.</p>",
+			"types": ["age"],
+			"age": {
+				"base": 0,
+				"middle": 16,
+				"old": 45,
+				"ancient": 55
+			}
+		},
+		{
+			"name": "Speed",
+			"description": "<p>Your movement speed is 30ft.</p>",
+			"types": ["base_speed"],
+			"speed": 30,
+		},
+		{
+			"name": "Bioenhanced",
+			"description": "<p>As a synth, you have advantage on checks to avoid disease.</p>",
+			"types": ["passive"]
+		},
+		{
+			"name": "Recharge",
+			"description": "<p>Instead of regular sleep, your enhancements allow you to sleep for just 4 hours a day and still gain the benefits of an 8 hour rest. Your AI produces the illusion of dreams for you in this state, usually of robot sheep.</p>",
+			"types": ["passive"]
+		},
+		{
+			"name": "Composite Weaving",
+			"description": "<p>Your skin and muscles are interwoven with high strength composite materials, granding you a natural armor of 13+your Dexterity modifier. Even when wearing armor your AC cannot be any lower than that of your natural armor.</p>",
+			"types": ["natural_armor"],
+			"natural_base_ac": 13,
+		},
+		{
+			"name": "Languages",
+			"description": "<p>You can speak, read, and write English, and one other language of your choice.</p>",
+			"types": ["language_proficiency"],
+			"languages": ["english", "choice"]
+		}
+	],
 	"suborigins": [
 		{
 			"name": "Manufacturer: Houston Dynamics M. IV",
 			"description": "For those who need more sophisticated security than a standard mech, Houston Dynamics offers the MK. IV Personal Security Synth.",
-			"ability_score_increases": [{"abiilty": "dexterity", "increase": 1}],
-			"climb_speed": 30,
-			"weapon_proficiencies": [{"category": "assault_rifles"}],
-			"feature_descriptions": {
-				"Advantageous Positioning": "You have a climb speed of 30 ft.",
-				"Memory Implant": "You are proficient with assault rifles."
-			} 
+			"features": [
+				{
+					"name": "Ability Score Increase",
+					"description": "<p>Your Dexterity score increases by 1.</p>",
+					"types": ["asi"],
+					"ability_score_increase": [{"ability": "dexterity", "increase": 1}] 
+				},
+				{
+					"name": "Advantageous Positioning",
+					"description": "<p>You have a climb speed of 30ft.</p>",
+					"types": ["climb_speed"],
+					"speed": 30
+				},
+				{
+					"name": "Memory Implant",
+					"description": "<p>You are proficient with assault rifles.</p>",
+					"types": ["weapon_proficiency"],
+					"weapon_proficiencies": [{"category": "assault_rifles"}]
+				}
+			]
 		},
 		{
 			"name": "Shenzhen Solutions Paramour",
 			"description": "The Paramour by Shenzhen Solutions makes the ideal host, counter intelligence asset, or personal companion.",
-			"ability_score_increases": [{"ability": "people", "increase": 1}],
-			"feature_descriptions": {
-				"Inbuilt Charm": "You have advantage on People (Persuasion) checks made to flatter, charm, or seduce."
-			}
+			"features": [
+				{
+					"name": "Ability Score Increase",
+					"description": "<p>You were built to deal with people, and emit pheromones that help you deal with people smoothly. Your People score increases by 1.</p>",
+					"types": ["asi"],
+					"ability_score_increase": [{"ability": "people", "increase": 1}] 
+				},
+				{
+					"name": "Inbuilt Charm",
+					"description": "<p>You have advantage on People (Persuasion) checks made to flatter, charm, or seduce.</p>",
+					"types": ["passive"]
+				}
+			]
 		},
 		{
 			"name": "Visser Robotics Advanced Synth",
 			"description": "The Advanced Synth by Visser Robotics was designed to work in the colonies as cheap labor. They have enhanced strength and night vision.",
-			"ability_score_increases": [{"ability": "strength", "increase": 1}],
-			"darkvision": 120,
-			"feature_descriptions": {
-				"Night Vision": "You can see in dim light as if it were bright light, and darkness as if it were dim light up to a distance of 120ft."
-			}
+			"features": [
+				{
+					"name": "Ability Score Increase",
+					"description": "<p>Your Strength score increases by 1.</p>",
+					"types": ["asi"],
+					"ability_score_increase": [{"ability": "strength", "increase": 1}] 
+				},
+				{
+					"name": "Night Vision",
+					"description": "<p>You can see in dim light as if it were bright light, and darkness as if it were dim light up to a distance of 120ft.</p>",
+					"types": ["darkvision"],
+					"darkvision_range": 120
+				}
+			]
 		}
 	]
 }

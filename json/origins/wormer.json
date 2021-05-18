@@ -1,25 +1,65 @@
 {
 	"name": "Wormer",
 	"description": "<p>Wormers are born in the offworld colonies, or to parents from the colonies. They are named after the wormholes that voyagers must travel through to reach the colonies.</p> <p>The low gravity of the colonies has caused wormers to grow unusually tall and lanky compared to people from Earth. Those born in the colonies must rely on their natural hardiness to survive the harsh unknowns.</p> <p>In the offworld colonies, wormers are used as slave labor, and treated no better than synths. Many wormers work for food and board, born into contracts naively signed by their ancestors who believed they were leaving Earth for a better life.</p> <p>Wormers who live on Earth have defied the quarantine and snuck back onto the planet, gaining citizenship as soon as they set foot on Earth’s soil. Treated as less than human, wormers are usually blamed for most of the petty crimes in the modern world and are quite often the victims of crime themselves.</p>",
-	"ability_score_increases": [{"ability": "constitution", "increase": 2}, {"ability": "dexterity", "increase": 1}],
-	"speed": 40,
-	"age": {
-		"base": 18,
-		"middle": 30,
-		"old": 60,
-		"ancient": 70
-	},
-	"skill_proficiencies": [{"skill": "sense_motive", "expertise": true}],
-	"darkvision": 60,
-	"hp_per_level": 1,
-	"carrying_capacity": {
-		"encumbered": 10,
-		"heavily_encumbered": 20
-	},
-	"languages": ["english", "offworld_creole", "choice", "choice"],
-	"feature_descriptions": [{
-		"A Twilight Planet": "You have disadvantage on attack rolls and Intelligence (Perception) checks when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.",
-		"Hard as Nails": "You gain an additional 1 hit point per level.",
-		"Generations of Hardship": "Your upper limits are doubled when determining your carrying capacity and the weight you can push, drag, or lift"
-	}]
+	"features": [
+		{
+			"name": "Ability Score Increase",
+			"description": "<p>Your Constituion score increases by 2, and your Dexterity score increases by 1.</p>",
+			"types": ["asi"],
+			"ability_score_increase": [{"ability": "constitution", "increase": 2}, {"ability": "dexterity", "increase": 1}] 
+		},
+		{
+			"name": "Age",
+			"description": "<p>The human body isn’t designed for low gravity, and wormers don’t live as long as their earthborn counterparts. They generally live to around 70 years old.</p>",
+			"types": ["age"],
+			"age": {
+				"base": 18,
+				"middle": 30,
+				"old": 60,
+				"ancient": 70
+			},
+		},
+		{
+			"name": "Speed",
+			"description": "<p>Your long limbs aid in your movement. Your base movement speed is 40ft.</p>",
+			"types": ["base_speed"],
+			"speed": 40
+		},
+		{
+			"name": "Like a Book",
+			"description": "<p>You are especially proficient in Sense Motive; double your proficiency bonus when you use this skill.</p>",
+			"types": ["skill_expertise"],
+			"skills": ["sense_motive"]
+		},
+		{
+			"name": "Darkvision",
+			"description": "<p>You live in a colony far from its solar system’s star and have grown up used to the darkness. You can see in complete darkness as if it were dim light up to a distance of 60ft. You cannot discern color in darkness, seeing only in shades of grey.</p>",
+			"types": ["darkvision"],
+			"darkvision_range": 60
+		},
+		{
+			"name": "A Twilight Planet",
+			"description": "<p>You have disadvantage on attack rolls and Intelligence (Perception) checks when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>",
+			"types": ["passive"]
+		},
+		{
+			"name": "Hard as Nails",
+			"description": "<p>You have to be tough to survive in the colonies. Your ancestors were the survivors of the brutalist worlds. You gain an additional 1 hit point per level.</p>",
+			"types": ["hp_per_level"],
+			"additional_hp": 1
+		},
+		{
+			"name": "Generations of Hardship",
+			"description": "<p>Wormers are the descendants of the fittest of the fit, and the strongest of the strong. Your upper limits are doubled when determining your carrying capacity and the weight you can push, drag, or lift</p>",
+			"types": ["carrying_capacity_multiplier"],
+			"multiplier": 2
+		}
+		{
+			"name": "Languages",
+			"description": "<p>You can speak, read, and write Offworld Creole, English, and two other languages of your choice.</p>",
+			"types": ["language_proficiency"],
+			"languages": ["english", "offworld_creole", "choice", "choice"]
+		}		
+	],
+	"suborigins": null
 }

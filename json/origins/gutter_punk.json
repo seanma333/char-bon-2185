@@ -1,21 +1,54 @@
 {
 	"name": "Gutter Punk",
 	"description": "<p>Gutter punks are part of an anti-social movement that rejects mainstream society and attempts to emulate their version of the punk movement from centuries past.</p> <p>Inspired by the punk rockers of history, gutter punks often wear ragged clothing consisting of torn pants, loose-fitting shirts, and sleeveless leather or jean jackets. Their jackets are decorated by themselves or their gang members using paint or markers. They favor spiked or studded embellishments and wear outlandish hairstyles and brightly painted augmentations designed to draw maximum attention.</p> <p>Gutter punks mostly live in slums or abandoned buildings alongside their fellows. Their counter culture ideals put them at odds with most authority figures, making honest work scarce, which in turn makes it hard for them to escape poverty.</p>",
-	"feature_descriptions": {
-		"Shotgunners": "You are proficient with the combat shotgun.",
-		"Adaptive": "You may pick one skill of your choice to be proficient in.",
-		"Misspent Youth": "You begin with Influence: Street 3."
-	},
-	"ability_score_increase": [{"ability": "dexterity", "increase": 2}, {"ability": "constitution", "increase": 1}],
-	"speed": 35,
-	"age": {
-		"base": 18,
-		"middle": 38,
-		"old": 68,
-		"ancient": 80
-	},
-	"weapon_proficiencies": [{"category": "combat_shotgun"}],
-	"skill_proficiencies": [{"skill": "choice", "expertise": false}],
-	"influence": {"street": 3},
-	"languages": ["english", "choice", "choice"]
+	"features": [
+		{
+			"name": "Ability Score Increase",
+			"description": "<p>Your Dexterity score increases by 2, your Constitution and Technology scores increases by 1.</p>",
+			"types": ["asi"],
+			"ability_score_increase": [{"ability": "dexterity", "increase": 2}, {"ability": "constitution", "increase": 1}, {"ability": "technology", "increase": 1}] 
+		},
+		{
+			"name": "Age",
+			"description": "<p>Gutter punks often don’t live to old age, although this is due to their living conditions and lifestyle rather than any genetic reasons. If they are fortunate to live a healthy lifestyle, a gutter punk can expect to live around 100 years.</p>",
+			"types": ["age"],
+			"age": {
+				"base": 18,
+				"middle": 38,
+				"old": 68,
+				"ancient": 80
+			},
+		},
+		{
+			"name": "Speed",
+			"description": "<p>Due to many years running away from law enforcement and running towards trouble, you’re slightly quicker on your feet than most people. Your base walking speed is 35 ft.</p>",
+			"types": ["base_speed"],
+			"speed": 35
+		},
+		{
+			"name": "Shotgunners",
+			"description": "<p>Due to its effectiveness in tight alleyways, the weapon of choice for gutter punks is the combat shotgun. You are proficient with this weapon.</p>",
+			"types": ["weapon_proficiency"],
+			"weapon_proficiencies": [{"category": "combat_shotgun"}]
+		},
+		{
+			"name": "Adaptive",
+			"description": "<p>Gangs need a wide variety of skills. You may pick one skill of your choice to become proficient in.</p>",
+			"types": ["skill_proficiency"],
+			"skill_proficiencies": ["choice"]
+		},
+		{
+			"name": "Misspent Youth",
+			"description": "You’ve grown up on the streets and have some basic contacts and a small reputation for yourself. You begin with Influence: Street 3.",
+			"types": ["influence"],
+			"influence": {"street": 3}
+		},
+		{
+			"name": "Languages",
+			"description": "<p>You can speak, read, and write English, and two other languages of your choice.</p>",
+			"types": ["language_proficiency"],
+			"languages": ["english", "choice", "choice"]
+		}		
+	],
+	"suborigins": null
 }
